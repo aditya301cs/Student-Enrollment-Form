@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Student Enrollment Form</h2>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="rollNo">Roll No:</label>
+                <input type="text" class="form-control" id="rollNo" placeholder="Enter Roll No" required>
+            </div>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name" disabled>
+            </div>
+            <div class="form-group">
+                <label for="class">Class:</label>
+                <input type="text" class="form-control" id="class" placeholder="Enter Class" disabled>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" class="form-control" id="birthDate" disabled>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea class="form-control" id="address" rows="3" disabled></textarea>
+            </div>
+            <div class="form-group">
+                <label for="enrollmentDate">Enrollment Date:</label>
+                <input type="date" class="form-control" id="enrollmentDate" disabled>
+            </div>
+            <button type="button" class="btn btn-primary" id="saveBtn" disabled>Save</button>
+            <button type="button" class="btn btn-warning" id="updateBtn" disabled>Update</button>
+            <button type="button" class="btn btn-secondary" id="resetBtn" disabled>Reset</button>
+        </form>
+    </div>
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="studentEnrollment.js"></script>
+</body>
+</html>
